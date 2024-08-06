@@ -1,0 +1,22 @@
+name: Generate ASCII
+on: push
+jobs:
+  ascii_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Install cowsay Program
+        run: sudo apt-get install cowsay -y
+          #echo "My first GitHub Actions Job"
+          #ls -ltra
+          #cat README.md
+      - name: Test File Exists
+        run: grep -i "dragon" dragon.txt
+
+      - name: Read File
+        run: cat dragon.txt
+
+      - name: Checkout Repo Files
+        run: ls -ltra
+
