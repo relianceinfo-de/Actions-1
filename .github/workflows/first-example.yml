@@ -18,8 +18,6 @@ jobs:
       - name: Generate ASCCI Artwork
         run: cowsay -f dragon "run for cover, I am a dragon....RAWR" >> dragon.txt
 
-
-
      # - name: List files
       #  run: ls
 
