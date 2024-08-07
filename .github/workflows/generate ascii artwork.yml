@@ -15,6 +15,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install cowsay -y
 
+    - name: Verify cowsay installation
+      run: cowsay "Installation Successful"
+
     - name: Test if file exists
       run: grep -i "dragon" dragon.txt
 
@@ -26,6 +29,3 @@ jobs:
 
     - name: Run cowsay
       run: cowsay -f dragon "run for cover, I am a dragon....rawr" >> dragon.txt
-
-
-    
