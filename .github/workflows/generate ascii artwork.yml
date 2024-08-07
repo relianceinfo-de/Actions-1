@@ -18,14 +18,14 @@ jobs:
     - name: Verify cowsay installation
       run: cowsay "Installation Successful"
 
-    - name: Test if file exists
-      run: grep -i "dragon" dragon.txt
-
-    - name: Read file
-      run: cat dragon.txt
-
     - name: List repo files
       run: ls -ltra
+
+    - name: Print file content
+      run: cat dragon.txt
+
+    - name: Test if file exists
+      run: grep -i "dragon" dragon.txt
 
     - name: Run cowsay
       run: cowsay -f dragon "run for cover, I am a dragon....rawr" >> dragon.txt
