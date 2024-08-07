@@ -13,7 +13,7 @@ jobs:
           echo "My first GitHub Actions Job"
           ls -ltra
           cat README.md
-          touch filename.txt
+          touch dragon.txt
 
 
       - name: Generate ASCII Artwork
