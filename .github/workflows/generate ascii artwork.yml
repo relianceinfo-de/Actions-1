@@ -7,16 +7,14 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
       - name: Install cowsay Program
-        run: sudo apt-get install cowsay -y
-          #echo "My first GitHub Actions Job"
-          #ls -ltra
-          #cat README.md
+        run: |
+          sudo apt-get update
+          sudo apt-get install cowsay -y
       - name: Test File Exists
         run: grep -i "dragon" dragon.txt
-
       - name: Read File
         run: cat dragon.txt
-
       - name: Checkout Repo Files
         run: ls -ltra
-
+      - name: Run cowsay
+        run: cowsay -f dragon "run for cover, I am a dragon....RAWR" >> dragon.txt
