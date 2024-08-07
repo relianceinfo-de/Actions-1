@@ -18,6 +18,3 @@ jobs:
 
       - name: Generate ASCII Artwork
         run: cowsay -f dragon "run for cover, I am a dragon....RAWR" >> dragon.txt
-
-
-  
